@@ -25,9 +25,32 @@ do {
   cielo.innerHTML += "🚀";
   m++;
 } while (m < 4);
-
+//eventos
+//Click
 const btnEstrella = document.getElementById("btnEstrella");
 
 btnEstrella.addEventListener("click", () => {
   cielo.innerHTML += "⭐";
 });
+
+//doble click
+
+const btnPlaneta = document.getElementById("btnPlaneta");
+
+btnPlaneta.addEventListener("dblclick", () => {
+  cielo.innerHTML += "🚀";
+});
+
+const inputEmoji = document.getElementById("InputEmoji")
+
+const btnAgregarEmoji = document.getElementById("btnAgregarEmoji")
+
+btnAgregarEmoji.addEventListener("click",()=>{
+  var emoji= inputEmoji.ariaValueMax.trim();
+  if(emoji) cielo.innerHTML += emoji;
+  inputEmoji.value="";
+})
+
+inputEmoji.addEventListener("keydown", e =>{
+  if(e.key==="Escape") cielo.innerHTML="";
+})
