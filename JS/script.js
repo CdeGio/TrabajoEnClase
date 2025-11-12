@@ -41,12 +41,12 @@ btnPlaneta.addEventListener("dblclick", () => {
   cielo.innerHTML += "🚀";
 });
 
-const inputEmoji = document.getElementById("InputEmoji")
+const inputEmoji = document.getElementById("inputEmoji")
 
 const btnAgregarEmoji = document.getElementById("btnAgregarEmoji")
 
 btnAgregarEmoji.addEventListener("click",()=>{
-  var emoji= inputEmoji.ariaValueMax.trim();
+  var emoji= inputEmoji.value.trim();
   if(emoji) cielo.innerHTML += emoji;
   inputEmoji.value="";
 })
@@ -54,3 +54,4 @@ btnAgregarEmoji.addEventListener("click",()=>{
 inputEmoji.addEventListener("keydown", e =>{
   if(e.key==="Escape") cielo.innerHTML="";
 })
+
