@@ -37,7 +37,7 @@ padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: brown;
+    background-color: rgb(191, 66, 202);
     gap: 1rem;
 }
 
@@ -58,4 +58,34 @@ padding: 20px;
 .card p{
     color: beige;
     background-color: black;
+}
+
+/* carrito */
+#carritoLista{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(224, 16, 224);
+    background-color: rgb(47, 163, 0);
+    color: white;
+}
+/*Concurrencia*/
+pre{
+    text-align: left;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    color: green;
+}
+
+/* Try catch */
+#bodyTry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mensaje{
+    font-weight: bold;
+    color: red;
 }
